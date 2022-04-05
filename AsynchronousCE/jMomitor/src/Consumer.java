@@ -5,7 +5,7 @@ class Consumer extends Thread {
         producer = p;
     }
 
-    public void run() {
+    public void run() {	// Java의 쓰레드 생성을 위해 Thread를 상속받고 run() 생성
         try {
             while (true) {
                 String message = producer.getMessage();

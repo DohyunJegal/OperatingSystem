@@ -1,4 +1,4 @@
-public class Consumer extends Thread {
+public class Consumer extends Thread { // 소비자 클래스
     private Buffer sharedLocation;
 
     public Consumer(Buffer shared) {
@@ -6,7 +6,7 @@ public class Consumer extends Thread {
         sharedLocation= shared;
     }
 
-    public void run() {
+    public void run() {	// Thread 클래스를 상속 후 run()을 정의하여 쓰레드 생성
         int sum = 0;
 
         for(int count = 1; count <= 4; count++) {
